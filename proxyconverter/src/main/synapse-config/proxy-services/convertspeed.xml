@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="convertspeed" startOnLoad="true" transports="https http" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <endpoint name="endpoint_urn_uuid_11439758-8f1f-4245-a8dc-18c32f69c5a5">
+            <address uri="http://www.webservicex.net/ConvertSpeed.asmx"/>
+        </endpoint>
+        <inSequence>
+            <log level="full"/>
+        </inSequence>
+        <outSequence>
+            <log level="full"/>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+</proxy>
